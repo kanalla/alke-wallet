@@ -54,3 +54,10 @@ label {
     border: 2px solid #b86b6b;
     color: #f0c7c7;
 }
+
+.alert-success {
+    text-align: center;
+    background-color: #33523b;
+    border: 2px solid #d4af37;
+    color: #d8f0dc;
+}

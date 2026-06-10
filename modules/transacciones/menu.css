@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    background: #2e241d;
+    border: 4px solid #b8860b;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 55px;
+    color: #e0c68d;
+    width: 500px;
+    box-shadow:
+        0 0 20px rgba(184, 134, 11, .5),
+        inset 0 0 10px rgba(255, 215, 0, .2);
+}
+
+.carousel {
+    border: 2px solid #b8860b;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #4b382a;
+    border: 2px solid #b8860b;
+    color: #e0c68d;
+    min-height: 250px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+#saldo {
+    font-size: clamp(32px, 8vw, 56px);
+     font-family: "JetBrains Mono";
+}
+
+#ultimosMovimientos {
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid #b8860b;
+    border-radius: 10px;
+    background: rgba(46, 36, 29, 0.6);
+}
+
+.movimiento {
+    padding: 10px;
+    border-left: 4px solid #b8860b;
+    margin-bottom: 10px;
+    background: rgba(75, 56, 42, 0.4);
+    border-radius: 6px;
+}
+
+.movimiento.positivo {
+    border-left-color: #4caf50;
+}
+
+.movimiento.negativo {
+    border-left-color: #c0392b;
+}
+
+.movimiento strong {
+    display: block;
+    margin-bottom: 4px;
+}

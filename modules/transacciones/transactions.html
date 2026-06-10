@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Últimos Movimientos</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="transactions.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="transactions.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Últimos Movimientos</h2>
+
+    <div class="form-group">
+        <label for="filtroTipo">Filtrar por tipo:</label>
+        <select id="filtroTipo" class="form-control">
+            <option value="todos">Todos</option>
+            <option value="compra">Compra</option>
+            <option value="deposito">Depósito</option>
+            <option value="transferencia_recibida">
+                Transferencia recibida
+            </option>
+        </select>
+    </div>
+
+    <div id="listaMovimientos"></div>
+
+    <a href="menu.html" class="btn btn-primary mt-3">
+        Volver al Menú
+    </a>
+
+</div>
+
+</body>
+</html>

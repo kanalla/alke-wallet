@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    background: #2e241d;
+    border: 4px solid #b8860b;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 55px;
+    color: #e0c68d;
+    width: fit-content;
+    box-shadow:
+        0 0 20px rgba(184, 134, 11, .5),
+        inset 0 0 10px rgba(255, 215, 0, .2);
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 25px;
+    max-width: 7000PX;
+}
+
+.panel-izq {
+    flex: 0 0 auto;
+    min-width: 400px;
+}
+
+
+.panel-der {
+    display: none;
+    min-width: 400px;
+}
+
+#nombre{
+    margin-top: 20px !important;
+}
+
+#guardar_contacto {
+    margin-top: 48px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    width: 50%;
+}
+
+#monto {
+    width: 50%;
+}
+
+.separador {
+    display: none;
+    width: 2px;
+    background-color: #b8860b;
+    align-self: stretch;
+}

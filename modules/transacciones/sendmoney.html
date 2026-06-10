@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enviar Dinero</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/global.css">
+        <link rel="stylesheet" href="sendmoney.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="sendmoney.js" defer></script>
+        </head>
+
+    <body>
+        <div class="container">
+            <div class="panel">
+                <div class="panel-izq">
+                    <h2>Enviar Dinero</h2>
+                    <div id="alerta" class="alert" style="display:none;"></div>
+                    <form id="transferenciaForm">
+                        <div class="form-group">
+                            
+                            <select id="contactos" class="form-control">
+                                <option value="" selected disabled>Seleccione un contacto</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Monto</label>
+                            <input id="monto" type="number" class="form-control" placeholder="$0" required>
+
+                        </div>
+                        <div class="form-group">
+                            <label>Mensaje</label>
+                            <textarea id="mensaje1" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="d-flex">
+                            <button type="submit" class="btn btn-primary mr-2">Enviar Dinero</button>
+                            <button id="btnNuevoContacto" class="btn btn-primary" type="button">Nuevo contacto</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="separador"></div>
+                <div class="panel-der">
+                    <div id="formContacto" style="display:none;">
+                        <h2>Nuevo Contacto</h2>
+                        <form id="contactoForm">
+                            <input type="text" id="nombre" class="form-control mt-2 " placeholder="Nombre" required>
+                            <input type="text" id="alias" class="form-control mt-2" placeholder="Alias" required>
+                            <input type="text" id="banco" class="form-control mt-2" placeholder="Banco" required>
+                            <input type="text" id="run" class="form-control mt-2" placeholder="Número de RUN" required>
+                            <input type="text" id="numeroCuenta" class="form-control mt-2" placeholder="Número de cuenta" required>
+                            <button type="submit" id="guardar_contacto" class="btn btn-primary">Guardar</button>
+                            <div id="alerta1" class="alert mt-2" style="display:none"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

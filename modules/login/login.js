@@ -4,7 +4,7 @@ $('#loginForm').submit(function(event) {
     const email = $('#email').val();
     const pass = $('#password').val();
 
-    if (email === 'javier@test.com' && pass === 'test') {
+    if (email === 'test@test.com' && pass === 'test') {
         window.location.href = '../transacciones/menu.html';
     } else {
         $('#mensaje').show();
